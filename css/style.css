@@ -22,19 +22,76 @@
 /*******************************************/
 
 body {
-
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
+/* Fixed Navbar */
 
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 
-footer {
+/* Navigation Links */
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+}
 
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Language Switcher */
+.language-switch {
+  display: flex;
+  align-items: center;
+}
+
+.language-switch button {
+  background-color: white;
+  color: #4CAF50;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.language-switch button:hover {
+  background-color: #ddd;
+}
+
+/* Page Content */
+.content {
+  padding-top: 80px;
+  padding: 20px;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 /******************************************
